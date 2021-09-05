@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20204.21.0315.1000                               -->
+<workbook original-version='18.1' source-build='2020.4.3 (20204.21.0315.1000)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='averagedistanceflown' inline='true' name='federated.094tis30c5hg8r10px6751gvc64q' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='averagedistanceflown' name='textscan.12mno601fuf3tv14kpdr51kyvgbn'>
+            <connection class='textscan' directory='C:/Users/vguan/Documents/SPS/IS362/Homework' filename='averagedistanceflown.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.12mno601fuf3tv14kpdr51kyvgbn' name='averagedistanceflown.csv' table='[averagedistanceflown#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Airline' ordinal='0' />
+            <column datatype='string' name='Manufacturer' ordinal='1' />
+            <column datatype='real' name='Average Distance' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.12mno601fuf3tv14kpdr51kyvgbn' name='averagedistanceflown.csv' table='[averagedistanceflown#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Airline' ordinal='0' />
+            <column datatype='string' name='Manufacturer' ordinal='1' />
+            <column datatype='real' name='Average Distance' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[averagedistanceflown.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Airline</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Airline]</local-name>
+            <parent-name>[averagedistanceflown.csv]</parent-name>
+            <remote-alias>Airline</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[averagedistanceflown.csv_92E48ED0C0E545DE8666CB6B552668EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Manufacturer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Manufacturer]</local-name>
+            <parent-name>[averagedistanceflown.csv]</parent-name>
+            <remote-alias>Manufacturer</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[averagedistanceflown.csv_92E48ED0C0E545DE8666CB6B552668EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Distance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average Distance]</local-name>
+            <parent-name>[averagedistanceflown.csv]</parent-name>
+            <remote-alias>Average Distance</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[averagedistanceflown.csv_92E48ED0C0E545DE8666CB6B552668EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Airline]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='averagedistanceflown.csv' datatype='table' name='[__tableau_internal_object_id__].[averagedistanceflown.csv_92E48ED0C0E545DE8666CB6B552668EE]' role='measure' type='quantitative' />
+      <column-instance column='[Airline]' derivation='None' name='[none:Airline:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Airline:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Hawaiian Airlines Inc.&#13;&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;AirTran Airways Corporation&#13;&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Endeavor Air Inc.&#13;&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Southwest Airlines Co.&#13;&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;JetBlue Airways&#13;&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Envoy Air&#13;&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Virgin America&#13;&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Alaska Airlines Inc.&#13;&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Frontier Airlines Inc.&#13;&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;American Airlines Inc.&#13;&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;ExpressJet Airlines Inc.&#13;&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;United Air Lines Inc.&#13;&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;US Airways Inc.&#13;&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mesa Airlines Inc.&#13;&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;SkyWest Airlines Inc.&#13;&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Delta Air Lines Inc.&#13;&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='averagedistanceflown.csv' id='averagedistanceflown.csv_92E48ED0C0E545DE8666CB6B552668EE'>
+            <properties context=''>
+              <relation connection='textscan.12mno601fuf3tv14kpdr51kyvgbn' name='averagedistanceflown.csv' table='[averagedistanceflown#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Airline' ordinal='0' />
+                  <column datatype='string' name='Manufacturer' ordinal='1' />
+                  <column datatype='real' name='Average Distance' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='averagedistanceflown' name='federated.094tis30c5hg8r10px6751gvc64q' />
+          </datasources>
+          <datasource-dependencies datasource='federated.094tis30c5hg8r10px6751gvc64q'>
+            <column datatype='string' name='[Airline]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Average Distance]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Manufacturer]' role='dimension' type='nominal' />
+            <column-instance column='[Airline]' derivation='None' name='[none:Airline:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Manufacturer]' derivation='None' name='[none:Manufacturer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Average Distance]' derivation='Sum' name='[sum:Average Distance:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='field-labels'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='font-size' value='12' />
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='normal' />
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.094tis30c5hg8r10px6751gvc64q].[none:Airline:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.094tis30c5hg8r10px6751gvc64q].[sum:Average Distance:qk]</rows>
+        <cols>([federated.094tis30c5hg8r10px6751gvc64q].[none:Manufacturer:nk] / [federated.094tis30c5hg8r10px6751gvc64q].[none:Airline:nk])</cols>
+      </table>
+      <simple-id uuid='{D001D8CC-51A5-4ACC-B5E9-4DE0BC854312}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.094tis30c5hg8r10px6751gvc64q].[none:Airline:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.094tis30c5hg8r10px6751gvc64q].[:Measure Names]</field>
+            <field>[federated.094tis30c5hg8r10px6751gvc64q].[none:Airline:nk]</field>
+            <field>[federated.094tis30c5hg8r10px6751gvc64q].[none:Manufacturer:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{52C22BB5-FDF2-464E-B17B-1AF097924C56}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      30WsAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

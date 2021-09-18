@@ -1,8 +1,6 @@
-Airline,Status,Los Angeles ,Phoenix,San Diego,San Francisco,Seattle
-Alaska,On Time,497,221,212,503,1841
-Alaska,Delayed,62,12,20,102,305
-AM West,On Time,694,4840,383,320,201
-AM West,Delayed,117,415,65,129,61
-,,,,,,
-,,,,,,
-,,,,,,
+Destination,Alaska_On_Time,Alaska_Delayed,AM_West_On_Time,AM_West_Delayed
+Los Angeles,497,62,694,117
+Phoenix,221,12,4840,415
+San Diego,212,20,383,65
+San Francisco,503,102,320,129
+Seattle,1841,305,201,61
